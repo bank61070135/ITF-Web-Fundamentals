@@ -11,7 +11,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Trolley | Online Shopping</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="/shopping/style.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
   <h1>Trolley</h1>

@@ -8,7 +8,7 @@
 </head>
 <body>
   <h1>Base64 Encoder</h1>
-  <form method="POST" action="/base64/process.php">
+  <form method="POST" action="process.php">
     <input type="hidden" name="type" value="encoding" />
     <div>
       <textarea name="message" rows="5" cols="100"></textarea>
@@ -19,7 +19,7 @@
   </form>
   <hr />
   <h1>Base64 Decoder</h1>
-  <form method="POST" action="/base64/process.php">
+  <form method="POST" action="process.php">
     <input type="hidden" name="type" value="decoding" />
     <div>
       <textarea name="message" rows="5" cols="100"></textarea>

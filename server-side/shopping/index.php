@@ -5,15 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Online Shopping</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="/shopping/style.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
   <h1>Online Shopping</h1>
-  <form method="POST" action="/shopping/trolley.php">
+  <form method="POST" action="trolley.php">
     <div class="row">
       <div class="column">
         <div>
-          <img src="/shopping/images/apple.jpg" alt="apple">
+          <img src="images/apple.jpg" alt="apple">
         </div>
         <h4>Apple</h4>
         <h4>$3.00</h4>
@@ -23,7 +23,7 @@
       </div>
       <div class="column">
         <div>
-          <img src="/shopping/images/pineapple.jpg" alt="pineapple">
+          <img src="images/pineapple.jpg" alt="pineapple">
         </div>
         <h4>Pineapple</h4>
         <h4>$3.50</h4>
@@ -33,7 +33,7 @@
       </div>
       <div class="column">
         <div>
-          <img src="/shopping/images/orange.jpg" alt="orange">
+          <img src="images/orange.jpg" alt="orange">
         </div>
         <h4>Orange</h4>
         <h4>$2.74</h4>
