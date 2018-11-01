@@ -1,5 +1,8 @@
 <?php
   if( !isset($_POST['name']) ) {
+    /*
+     * ถ้า $_POST['name'] ไม่มีค่า จะบังคับ Redirect ไปยัง index.php
+     */
     header("location: ./index.php");
   }
 ?>
@@ -26,13 +29,19 @@
     </thead>
     <tbody>
       <?php
+        /*
+         * intval('1') === int('1') in Python
+         */
         $apple_quantity = intval($_POST['apple']);
         $pineapple_quantity = intval($_POST['pineapple']);
         $orange_quantity = intval($_POST['orange']);
 
+        /*
+         * isset($apple_quantity) เช็คตัวแปรว่ามีค่าหรือไม่
+         */
         if (isset($apple_quantity) && $apple_quantity > 0) {
           $apple_total = $apple_quantity * 3.00;
-          $apple_total = number_format($apple_total, 2, '.', '');
+          $apple_total = number_format($apple_total, 2, '.', ''); // number_format() จัดการทศนิยม
           echo "<tr>" .
                "<td>Apple</td>" .
                '<td class="price">$3.00</td>' .
