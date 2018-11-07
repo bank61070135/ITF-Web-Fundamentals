@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>IP Geolocation</title>
+</head>
+<body>
+  <h1>IP Geolocation</h1>
+  <div>
+    <a href="https://ipinfo.io/">https://ipinfo.io/</a>
+  </div>
+  <div>
+    <a href="https://ipinfo.io/json/">https://ipinfo.io/json/</a>
+  </div>
+
+  <div>
+    <div>
+      <b>ip: </b>
+      <span id="ip"></span>
+    </div>
+    <div>
+      <b>city: </b>
+      <span id="city"></span>
+    </div>
+    <div>
+      <b>region: </b>
+      <span id="region"></span>
+    </div>
+    <div>
+      <b>country: </b>
+      <span id="country"></span>
+    </div>
+    <div>
+      <b>loc: </b>
+      <span id="loc"></span>
+    </div>
+    <div>
+      <b>postal: </b>
+      <span id="postal"></span>
+    </div>
+    <div>
+      <b>org: </b>
+      <span id="org"></span>
+    </div>
+  </div>
+
+  <div>
+    <h3>JSON Stringify</h3>
+    <pre id="json"></pre>
+  </div>
+
+  <script>
+    const URL = "https://ipinfo.io/json";
+    fetch(URL)
+      .then(response => response.json())
+      .then(data => {
+        console.log(data)
+
+        document.getElementById("ip").innerText = data.ip;
+        document.getElementById("city").innerText = data.city;
+        document.getElementById("region").innerText = data.region;
+        document.getElementById("country").innerText = data.country;
+        document.getElementById("loc").innerText = data.loc;
+        document.getElementById("postal").innerText = data.postal;
+        document.getElementById("org").innerText = data.org;
+
+        document.getElementById("json").innerText = JSON.stringify(data);
+      })
+  </script>
+</body>
+</html>
