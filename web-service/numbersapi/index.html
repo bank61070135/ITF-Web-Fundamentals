@@ -16,11 +16,16 @@
 
   <div class="content">
     <div>
-      <div id="number"></div>
-      <div id="fact">Click on Random button</div>
+      <div id="number"><!-- ส่วนนี้จะถูกจัดการในฝั่ง Javascript --></div>
+      <div id="fact">
+        <!-- ส่วนนี้จะถูกแทนค่าเป็นข้อความที่ได้จาก API ในฝั่ง Javascript -->
+        Click on Random button
+      </div>
     </div>
     <div>
-      <button type="button" onclick="random()">Random</button>
+      <button type="button" onclick="random()"> <!-- เมื่อคลิกที่ปุ่ม ฟังก์ชัน random จะถูกเรียกใช้ โดยที่ฟังก์ชัน random อยู่ในส่วน Javascript -->
+        Random
+      </button>
     </div>
   </div>
 </body>
