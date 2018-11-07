@@ -1,10 +1,10 @@
 # ITF - Web Fundamentals
 
 ## Folder structure
+* static-webpage
 * server-side
   * base64
   * shopping
-* static-webpage
 * web-service
   * coinmarketcap
   * exchange
