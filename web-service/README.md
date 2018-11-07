@@ -18,14 +18,6 @@
 
 **API:** https://ipinfo.io/json/
 
-### CoinMarketCap
-
-รายชื่อ Cryptocerrency ที่มีในเว็ป https://coinmarketcap.com/
-
-**Website:** https://coinmarketcap.com/
-
-**API:** https://coinmarketcap.com/api/
-
 ### NumbersAPI
 
 API เกี่ยวกับข้อเท็จจริงของตัวเลข
@@ -33,6 +25,14 @@ API เกี่ยวกับข้อเท็จจริงของตั�
 **Website:** http://numbersapi.com/
 
 **API:** http://numbersapi.com/#random/trivia?json
+
+### CoinMarketCap
+
+รายชื่อ Cryptocerrency ที่มีในเว็ป https://coinmarketcap.com/
+
+**Website:** https://coinmarketcap.com/
+
+**API:** https://coinmarketcap.com/api/
 
 ### TV Maze
 
