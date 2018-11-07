@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>Welcome to JSON</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div style="color:red" id="data">
+  </div>
+  <div style="color:blue" id="data1">
+  </div>
+
+  <script type="text/javascript">
+    $.getJSON('https://api.exchangeratesapi.io/latest', response => {
+
+      document.getElementById("data").innerHTML = response.rates.THB + '<span style="color: blue;"> ' + response.date + '</span>'
+      document.getElementById("data1").innerHTML = response.date
+    });
+  </script>
+
+</body>
+
+</html>
