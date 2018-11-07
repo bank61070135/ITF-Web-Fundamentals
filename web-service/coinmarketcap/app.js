@@ -1,3 +1,5 @@
+// ไฟล์นี้ไม่มีการสร้างฟังก์ชันใด ๆ ทั้งสิ้น เมื่อเปิดหน้าเว็ปแล้วจะรัน fetch() ทันที
+
 const apiURL = "https://api.coinmarketcap.com/v2/listings/";
 
 fetch(apiURL) // ดึงข้อมูลจากลิงค์ apiURL
