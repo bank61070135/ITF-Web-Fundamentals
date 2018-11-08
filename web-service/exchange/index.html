@@ -7,14 +7,21 @@
 
 <body>
   <div style="color:red" id="data">
+    <!-- ส่วนนี้จะถูกจัดการใน Javascript ตามบรรทัดที่ 22 -->
   </div>
   <div style="color:blue" id="data1">
+    <!-- ส่วนนี้จะถูกจัดการใน Javascript ตามบรรทัดที่ 25 -->
   </div>
 
   <script type="text/javascript">
+    // Code เพื่อไปเรียก API และเก็บลงในตัวแปรที่ชื่อว่า response
     $.getJSON('https://api.exchangeratesapi.io/latest', response => {
 
+      // เรียกข้อมูล Key ชื่อ 'rates.THB' และใส่ลงใน HTML ที่ id="data" (บรรทัดที่ 9)
+      // บรรทัดนี้จะมีการต่อข้อความ โดยเอา HTML มาผสมเพื่อให้มีความสวยงาม
       document.getElementById("data").innerHTML = response.rates.THB + '<span style="color: blue;"> ' + response.date + '</span>'
+
+      // เรียกข้อมูล Key ชื่อ 'date' และใส่ลงใน HTML ที่ id="data1" (บรรทัดที่ 12)
       document.getElementById("data1").innerHTML = response.date
     });
   </script>
